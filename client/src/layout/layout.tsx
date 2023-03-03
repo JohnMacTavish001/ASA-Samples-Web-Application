@@ -14,6 +14,7 @@ import { TodoItem, TodoList } from '../models';
 import { headerStackStyles, mainStackStyles, rootStackStyles, sidebarStackStyles } from '../ux/styles';
 import TodoItemDetailPane from '../components/todoItemDetailPane';
 import { bindActionCreators } from '../actions/actionCreators';
+import MsalTest from "../pages/msalTest";
 
 const Layout: FC = (): ReactElement => {
     const navigate = useNavigate();
@@ -66,6 +67,7 @@ const Layout: FC = (): ReactElement => {
                         <Route path="/lists/:listId" element={<HomePage />} />
                         <Route path="/lists" element={<HomePage />} />
                         <Route path="/" element={<HomePage />} />
+                        <Route path="/msalTest" element={<MsalTest />} />
                     </Routes>
                 </Stack.Item>
                 <Stack.Item styles={sidebarStackStyles}>
