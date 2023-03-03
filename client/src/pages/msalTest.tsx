@@ -6,11 +6,8 @@ import * as msal from "@azure/msal-browser";
 
 const MsalTest = () => {
     useEffect(() => {
-        console.log('aaaaa');
         const myMSALObj = new msal.PublicClientApplication(msalConfig);
         console.log(myMSALObj);
-        const plus = require("../jsLib/jsUtil")
-        console.log(plus("aaa", "bbb"))
     }, []);
 
     return (
